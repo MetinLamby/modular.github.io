@@ -1,3 +1,244 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: white;
+}
+
+/* HEADER */
+
+.hero-banner {
+  /*background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;*/
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.auth-buttons a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.login {
+  color: white;
+}
+
+.create-account {
+  background-color: #003CFF;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #003CFF;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.insight-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.partners-carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.partners-carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scrollbar-width: none;
+  align-items: center; /* ensures vertical centering */
+}
+
+.partners-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/*
+.partners-carousel img {
+  height: 40px;
+  flex: 0 0 auto;
+  filter: brightness(0) invert(1);
+}
+  */
+
+.partners-carousel img {
+  height: 40px; /* Unified height */
+  width: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: brightness(0) invert(1); /* optional: white logos */
+}
+
+
+/* PRODUCT OFFERINGS */
+
+.product-offering {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+  h2 {
+    color: #1B2021;
+  }
+}
+
+.section-label {
+  color: #003cff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.product-offering h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h3 {
+    color: #1B2021;
+  }
+}
+
+.icon-circle {
+  background-color: #e6e9f0;
+  color: #003cff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.min-invest {
+  font-size: 0.85rem;
+  background-color: #eee;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.card a {
+  color: #003cff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.card a .plus {
+  margin-left: 0.3rem;
+  font-weight: bold;
 }

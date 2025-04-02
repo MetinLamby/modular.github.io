@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Modular</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modular Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>This is Modular three</h1>
+
+  <!-- HEADER -->
+
+  <header class="hero-banner">
+    <nav class="navbar">
+      <div class="logo">Modular</div>
+      <ul class="nav-links">
+        <li><a href="#">Solutions ▾</a></li>
+        <li><a href="#">Resources ▾</a></li>
+        <li><a href="#">Company ▾</a></li>
+        <li><a href="#">Contact ▾</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="#" class="login">Log in</a>
+        <a href="#" class="create-account">Create Account</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="insight-badge">Insights: &nbsp; <span>Changing client needs in Wealth Management</span></div>
+      <h1>Modular Quantitative Solutions<br /> for Traditional Wealth Managers</h1>
+      <p>Integrate advanced real-time portfolio analytics in your product<br />  to provide your clients more transparency.</p>
+      <a href="#" class="cta-button">Get in Touch</a>
+    </div>
+
+    <div class="partners-carousel-container">
+      <div class="partners-carousel" id="partnersCarousel">
+        <img src="https://www.kreativrealisten.de/wp-content/uploads/2019/06/client_logo-sparkassekoelnbonn.png" alt="SparkasseKB" />
+        <img src="https://images.seeklogo.com/logo-png/32/2/pictet-logo-png_seeklogo-320132.png" alt="Pictet" />
+        <img src="https://group.medialine.com/media/e81003bb-a5f8-4e9b-92ad-08c0dd0d91ef/hpp-logo.png" alt="HPP" />
+        <img src="https://www.wvb.de/content/dam/f1901-0/cloud-transfer/WEBBANK_ALT/THEMEN/Logos/Download/logo-wiesbadener-volksbank.png" alt="Wiesbadener Volksbank" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Raiffeisen_Bank_2023_logo.svg/2560px-Raiffeisen_Bank_2023_logo.svg.png" alt="Raifeisenbank" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Commerzbank_%282009%29.svg/2560px-Commerzbank_%282009%29.svg.png" alt="Commerzbank" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Aareal_Bank_logo.svg/2560px-Aareal_Bank_logo.svg.png" alt="Aareal" />
+
+        <img src="https://www.kreativrealisten.de/wp-content/uploads/2019/06/client_logo-sparkassekoelnbonn.png" alt="SparkasseKB" />
+        <img src="https://images.seeklogo.com/logo-png/32/2/pictet-logo-png_seeklogo-320132.png" alt="Pictet" />
+        <img src="https://group.medialine.com/media/e81003bb-a5f8-4e9b-92ad-08c0dd0d91ef/hpp-logo.png" alt="HPP" />
+        <img src="https://www.wvb.de/content/dam/f1901-0/cloud-transfer/WEBBANK_ALT/THEMEN/Logos/Download/logo-wiesbadener-volksbank.png" alt="Wiesbadener Volksbank" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Raiffeisen_Bank_2023_logo.svg/2560px-Raiffeisen_Bank_2023_logo.svg.png" alt="Raifeisenbank" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Commerzbank_%282009%29.svg/2560px-Commerzbank_%282009%29.svg.png" alt="Commerzbank" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Aareal_Bank_logo.svg/2560px-Aareal_Bank_logo.svg.png" alt="Aareal" />
+      </div>
+    </div>
+    
+    <script>
+      const carousel = document.getElementById("partnersCarousel");
+    
+      // Clone all logos to enable seamless infinite loop
+      carousel.innerHTML += carousel.innerHTML;
+    
+      let scrollSpeed = 3.5; // Adjust speed here
+      let scrollInterval;
+    
+      function startAutoScroll() {
+        scrollInterval = setInterval(() => {
+          carousel.scrollLeft += scrollSpeed;
+          if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+            carousel.scrollLeft = 0; // Reset to start for infinite loop
+          }
+        }, 30); // Adjust interval for smoothness
+      }
+    
+      startAutoScroll();
+    
+      // Optional: Pause on hover
+      carousel.addEventListener("mouseenter", () => clearInterval(scrollInterval));
+      carousel.addEventListener("mouseleave", () => startAutoScroll());
+    </script>
+    
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <section class="product-offering">
+    <p class="section-label">Our product offering</p>
+    <h2>Needs-based<br>financial advisory</h2>
+    <p class="section-subtitle">
+      API-driven architecture, enabling integrations across <br>
+      trading platforms, custodians, and analytics tools.
+    </p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="icon-circle">🤝</div>
+        <h3>Personal Risk Tolerance Matching</h3>
+        <p>Opportunities to invest directly in funds managed by top-tier GPs like KKR and EQT.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+
+      <div class="card">
+        <div class="icon-circle">🏁</div>
+        <h3>Portfolio Goal Tracking</h3>
+        <p>Allow your clients to actively pursue and track bite-sized goals across investment, protection, education, retirement, and broader wellness.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+
+      <div class="card">
+        <div class="icon-circle">📪</div>
+        <h3>Custom Alerts & Reports</h3>
+        <p>Clients are keen to stay highly informed and make their own investment decisions. We cater to such preferences, providing alerts and notifications about external factors or events in clients' lives.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+
+      <div class="card">
+        <div class="icon-circle">📈</div>
+        <h3>Risk Exposure Analysis</h3>
+        <p>Flexible investment products with semi-liquid structures, designed to offer liquidity options not typically available in private equity.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+
+      <div class="card">
+        <div class="icon-circle">🌍</div>
+        <h3>Market & Segment Exposure Analysis</h3>
+        <p>Flexible investment products with semi-liquid structures, designed to offer liquidity options not typically available in private equity.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+
+      <div class="card">
+        <div class="icon-circle">📉</div>
+        <h3>Maximum Drawdown</h3>
+        <p>Flexible investment products with semi-liquid structures, designed to offer liquidity options not typically available in private equity.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+
+      <div class="card">
+        <div class="icon-circle">🌩</div>
+        <h3>Macro Stress Scenarios</h3>
+        <p>Flexible investment products with semi-liquid structures, designed to offer liquidity options not typically available in private equity.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+
+      <div class="card">
+        <div class="icon-circle">⚖️</div>
+        <h3>Rebalancing Suggestions</h3>
+        <p>Flexible investment products with semi-liquid structures, designed to offer liquidity options not typically available in private equity.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+
+      <div class="card">
+        <div class="icon-circle">🧠</div>
+        <h3>Automated Downside Risk Protection</h3>
+        <p>Flexible investment products with semi-liquid structures, designed to offer liquidity options not typically available in private equity.</p>
+        <a href="#">Learn More <span class="plus">+</span></a>
+      </div>
+    </div>
+  </section>
 </body>
-</html> 
+</html>
