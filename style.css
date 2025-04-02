@@ -145,6 +145,14 @@ body {
   filter: brightness(0) invert(1); /* optional: white logos */
 }
 
+@media (max-width: 768px) {
+  /* ... your other mobile styles ... */
+
+  .partners-carousel img {
+    height: 28px; /* smaller logos for phones */
+  }
+}
+
 /* ABOUT MODULAR */
 
 .about-section {
@@ -377,5 +385,59 @@ body {
     width: 40px;
     height: 40px;
     font-size: 1rem;
+  }
+}
+
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.mobile-menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
   }
 }

@@ -13,17 +13,36 @@
   <header class="hero-banner">
     <nav class="navbar">
       <div class="logo">Modular</div>
-      <ul class="nav-links">
-        <li><a href="#">Solutions ▾</a></li>
-        <li><a href="#">Resources ▾</a></li>
-        <li><a href="#">Company ▾</a></li>
-        <li><a href="#">Contact ▾</a></li>
-      </ul>
-      <div class="auth-buttons">
-        <a href="#" class="login">Log in</a>
-        <a href="#" class="create-account">Create Account</a>
+    
+      <!-- Hamburger Button -->
+      <div class="burger" id="burger">
+        ☰
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul class="nav-links">
+          <li><a href="#">Solutions ▾</a></li>
+          <li><a href="#">Resources ▾</a></li>
+          <li><a href="#">Company ▾</a></li>
+          <li><a href="#">Contact ▾</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <a href="#" class="login">Log in</a>
+          <a href="#" class="create-account">Create Account</a>
+        </div>
       </div>
     </nav>
+
+    <script>
+      const burger = document.getElementById("burger");
+      const mobileMenu = document.getElementById("mobileMenu");
+    
+      burger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
+    
 
     <div class="hero-content">
       <div class="insight-badge">Insights: &nbsp; <span>Changing client needs in Wealth Management</span></div>
