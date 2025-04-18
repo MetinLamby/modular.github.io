@@ -101,9 +101,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px;
-    padding: 30px;
-    border-radius: 10%;
+    margin-top: 3%;
 }
 
 .contact-form {
