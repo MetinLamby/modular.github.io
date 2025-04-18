@@ -1,0 +1,105 @@
+/* DEFAULT CSS */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    background: #000;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links.mobile {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.mobile.show {
+    display: flex;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links.desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+/* demo Section */
+
+.demo-banner {
+    display: flex;
+    justify-content: center;
+}
