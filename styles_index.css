@@ -77,11 +77,11 @@ body {
   
   .hero {
     text-align: center;
-    padding: 60px 20px 40px 20px;
+    padding: 20px;
   }
 
   .banner {
-    background-image: url('images/background_color.png');
+    background-image: url('images/background_color_blue.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -345,14 +345,6 @@ body {
   border-radius: 12px;
   min-width: 240px;
   max-width: 300px;
-
-  /*
-  padding: 2rem;
-  flex: 1;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-  */
-
   padding: 2rem;
   text-align: left;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -587,4 +579,3 @@ body {
     font-size: 1rem;
   }
 }
-
