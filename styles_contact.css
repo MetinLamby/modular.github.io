@@ -98,9 +98,11 @@ header {
 /* contact Section */
 
 .form-container {
+    width: 100%;
+    padding: 0 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
     margin-top: 3%;
 }
 
@@ -181,11 +183,28 @@ header {
 }
 
 @media (max-width: 600px) {
+    .form-container {
+        padding: 0 20px;
+        margin: 40px 0;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+
     .contact-form .row {
         flex-direction: column;
+        gap: 0;
     }
 
     .contact-form .row .half {
         flex: 1 1 100%;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
