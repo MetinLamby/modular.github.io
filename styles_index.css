@@ -10,6 +10,8 @@ body {
     font-family: Arial, sans-serif;
     color: #000;
   }
+
+  /* NAVBAR */
   
   header {
     display: flex;
@@ -52,7 +54,7 @@ body {
   .nav-links.mobile {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     background-color: white;
     position: absolute;
     top: 100%;
@@ -64,7 +66,23 @@ body {
   .nav-links.mobile.show {
     display: flex;
   }
+
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: flex;
+    }
   
+    .nav-links.desktop {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn-contact-nav {
+      width: 80%;
+    }
+  }
+
   .button {
     padding: 10px 20px;
     background-color: black;
@@ -74,6 +92,8 @@ body {
     cursor: pointer;
     font-weight: bold;
   }
+
+  /* BANNER */
   
   .hero {
     text-align: center;
@@ -116,14 +136,6 @@ body {
   }
   
   @media (max-width: 768px) {
-    .nav-toggle {
-      display: flex;
-    }
-  
-    .nav-links.desktop {
-      display: none;
-    }
-  
     .hero h1 {
       font-size: 2.5rem;
     }
@@ -153,6 +165,9 @@ body {
     }
   }
   
+
+
+
 
 /* ABOUT MODULAR */
 
@@ -311,13 +326,6 @@ body {
 }
 
 .why-header h2 {
-  /*
-  font-size: 2.4rem;
-  color: #1c1c1c;
-  margin-bottom: 1rem;
-  text-align: left;
-  */
-
   font-size: 3rem;
   font-family: Georgia, 'Times New Roman', serif;
   font-weight: 500;
@@ -334,16 +342,13 @@ body {
 
 .why-features {
   display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 3rem;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .why-card {
   background-color: white;
   border-radius: 12px;
-  min-width: 240px;
   max-width: 300px;
   padding: 2rem;
   text-align: left;
@@ -389,13 +394,9 @@ body {
   .why-subtitle {
     font-size: 1rem;
   }
-
-  .why-features {
-    gap: 1.5rem;
-  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .why-header h2 {
     font-size: 1.75rem;
   }
@@ -410,9 +411,9 @@ body {
   }
 
   .why-card {
-    width: 100%;
-    max-width: 350px;
-    padding: 1.5rem;
+    max-width: 300px;
+    padding: 2rem;
+    margin-bottom: 20px;
   }
 
   .why-icon {
