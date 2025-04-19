@@ -1,22 +1,21 @@
 /* DEFAULT CSS */
-
 a {
     text-decoration: none;
     color: inherit;
-}
-
-body {
+  }
+  
+  body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #000;
-}
-
-/* NAVBAR */
+  }
   
-header {
+  /* NAVBAR */
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,13 +62,13 @@ header {
     top: 100%;
     left: 0;
     padding: 10px 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .nav-links.mobile.show {
     display: flex;
   }
-
+  
   @media (max-width: 768px) {
     .nav-toggle {
       display: flex;
@@ -85,7 +84,7 @@ header {
       width: 80%;
     }
   }
-
+  
   .button {
     padding: 10px 20px;
     background-color: black;
@@ -96,117 +95,144 @@ header {
     font-weight: bold;
   }
 
-/* contact Section */
 
-.form-container {
-    padding: 0 20px;
-    display: flex;
+
+
+
+
+/* TEAM SECTION */
+.team-section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.section-tag {
+  font-weight: 600;
+  color: #1e32e8;
+  margin-bottom: 0.5rem;
+}
+
+.team-header h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+}
+
+.team-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.tab.active {
+  background-color: #1e32e8;
+  color: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.team-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team-info h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.team-info p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 2rem 1rem;
+  }
+
+  .team-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .tab {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .team-card {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 3%;
-    margin-bottom: 5%;
-}
+    text-align: center;
+  }
 
-.contact-form {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-}
-
-.contact-form .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.contact-form .row .half {
-    flex: 1 1 45%;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact-form .checkbox-container {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.contact-form .checkbox-container input[type="checkbox"] {
-    margin-right: 10px;
-    margin-top: 5px;
-}
-
-.contact-form .small-text {
-    font-size: 0.9rem;
-    margin-top: -10px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.contact-form button {
-    padding: 14px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100%;
-}
-
-.contact-form button:hover {
-    background-color: #333;
-}
-
-@media (max-width: 600px) {
-    .contact-form {
-        padding: 0px;
-        box-shadow: none;
-        border-radius: 10px;
+  .team-info {
+    text-align: center;
+    h4 {
+      text-align: left;
     }
-
-    .contact-form .row {
-        flex-direction: column;
-        gap: 0;
+    p {
+      text-align: left;
     }
-
-    .contact-form .row .half {
-        flex: 1 1 100%;
-    }
-
-    .contact-form h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+  }
 }
-
-
-
 
 
 

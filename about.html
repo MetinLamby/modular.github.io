@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modular - Portfolio Analytics</title>
+  <link rel="stylesheet" href="styles_about.css?v=1.0.1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...your integrity..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mobile-nav');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <div class="logo">Modular</div>
+    </a>
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links desktop">
+      <a href="products.html">
+        <div>Products</div>
+      </a>
+      <a href="demo.html">
+        <div>Demo</div>
+      </a>
+      <a href="about.html">
+        <div>About</div>
+      </a>
+      <a href="contact.html" class="button">Get In Touch</a>
+    </nav>
+    <nav class="nav-links mobile" id="mobile-nav">
+      <a href="products.html">
+        <div>Products</div>
+      </a>
+      <a href="demo.html">
+        <div>Demo</div>
+      </a>
+      <a href="about.html">
+        <div>About</div>
+      </a>
+      <a href="contact.html">Get In Touch</a>
+    </nav>
+  </header>
+
+  <!-- About Banner Section -->
+  <section class="team-section">
+    <div class="team-header">
+      <p class="section-tag">Who's behind Modular?</p>
+      <h2>Academic excellence with industry experience, att your side</h2>
+      <p class="section-subtitle">Our experienced team brings advanced technical and financial know-how to guide you at every step.</p>
+      <div class="team-tabs">
+        <button class="tab active">Tech Committee</button>
+        <button class="tab">Finance Team</button>
+      </div>
+    </div>
+  
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="image-container">
+          <img src="images/team-leo.jpeg" alt="Member 1">
+        </div>
+        <div class="team-info">
+          <div class="team-info-text-holder">
+            <h4>Leo Schorling        <a href="https://www.linkedin.com/in/leo-schorling/"><i class="fa-brands fa-linkedin"></i></a></h4>
+            <p><strong>Bachelor:</strong> Industrial Engineering, Karlruhe Institute of Technology</p>
+            <p><strong>Master:</strong> Financial Technology, Imperial College London</p>
+            <p><strong>Experience:</strong> EY, BCG, QTC</p>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="image-container">
+          <img src="images/team-metin.jpeg" alt="Member 2">
+        </div>
+        <div class="team-info">
+          <div class="team-info-text-holder">
+            <h4>Metin Lamby        <a href="https://www.linkedin.com/in/metinlamby/"><i class="fa-brands fa-linkedin"></i></a></h4>
+            <p><strong>Bachelor:</strong> Information Systems, Technical University Munich</p>
+            <p><strong>Master:</strong> Financial Technology, Imperial College London</p>
+            <p><strong>Experience:</strong> Deutsche Börse, 360X, SwissRe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+      This footer is made with <i class="fas fa-heart"></i> at Imperial College London
+    </div>
+  </div>
+  
+
+</body>
+</html>
