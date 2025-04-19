@@ -98,6 +98,11 @@ body {
   .hero {
     text-align: center;
     padding: 20px;
+    .subheader {
+      color: #003cff;
+      font-weight: 600;
+      font-size: 1rem;
+    }
   }
 
   .banner {
@@ -110,6 +115,8 @@ body {
   .hero h1 {
     font-size: 3.5rem;
     margin: 10px 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.2;
   }
   
   .hero p {
@@ -236,6 +243,10 @@ body {
   font-size: 1.1rem;
   color: #666;
   margin-bottom: 3rem;
+}
+
+.section-subtitle-bottom {
+  margin-top: 50px;
 }
 
 .cards-grid {
@@ -564,6 +575,7 @@ body {
   .section-subtitle {
     font-size: 1rem;
   }
+
 
   .cards-grid {
     grid-template-columns: 1fr;
