@@ -100,6 +100,29 @@ header {
 
 /* demo Section */
 
+.demo-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.demo-header {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.2;
+}
+
+.demo-header-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
 .demo-banner {
     display: flex;
     justify-content: center;
@@ -145,7 +168,18 @@ header {
   }
 }
 
+.demo-frame {
+  height: 100%;
+  position: relative;
+  width: 50%;
+}
 
+@media (max-width: 768px) {
+  .demo-frame {
+    width: 100vw;
+    height: 50vh;
+  }
+}
 
 /* FOOTER */
 .footer {
